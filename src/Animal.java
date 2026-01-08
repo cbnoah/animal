@@ -20,4 +20,8 @@ public class Animal {
     public int getAge() {
         return age;
     }
+
+    public static String commonRule() {
+        return "All animals need food and water to survive.";
+    }
 }
