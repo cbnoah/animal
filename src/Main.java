@@ -9,5 +9,8 @@ public class Main {
         cow.eat();
         Dog dog = new Dog("Buddy", "Woof", 3);
         dog.eat();
+
+        cow.eat("hay");
+        cow.eat("ynov");
     }
 }
