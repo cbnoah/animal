@@ -28,4 +28,8 @@ public class Animal {
     public void eat() {
         System.out.println("An animal is eating.");
     }
+
+    public void eat(String food) {
+        System.out.println("The animal is eating " + food + ".");
+    }
 }
