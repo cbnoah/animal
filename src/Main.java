@@ -19,5 +19,7 @@ public class Main {
         System.out.println(genericAnimal.getAge());
         System.out.println(genericAnimal.getName());
         System.out.println(genericAnimal.getSound());
+
+        dog.play();
     }
 }
