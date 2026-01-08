@@ -1,4 +1,5 @@
 public class Animal {
+    // Attribut en privé pour que les accès se fassent via les getters
     private final String name;
     private final String sound;
     private final int age;
@@ -9,15 +10,16 @@ public class Animal {
         this.age = age;
     }
 
-    public String getName() {
+    // Getters en protected pour qu'uniquement les sous-classes puissent y accéder
+    protected String getName() {
         return name;
     }
 
-    public String getSound() {
+    protected String getSound() {
         return sound;
     }
 
-    public int getAge() {
+    protected int getAge() {
         return age;
     }
 
@@ -25,11 +27,12 @@ public class Animal {
         return "All animals need food and water to survive.";
     }
 
-    public void eat() {
+    // Méthode eat à être redéfinit dans les sous-classes
+    protected void eat() {
         System.out.println("An animal is eating.");
     }
 
-    public void eat(String food) {
+    protected void eat(String food) {
         System.out.println("The animal is eating " + food + ".");
     }
 }
