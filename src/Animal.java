@@ -24,4 +24,8 @@ public class Animal {
     public static String commonRule() {
         return "All animals need food and water to survive.";
     }
+
+    public void eat() {
+        System.out.println("An animal is eating.");
+    }
 }
