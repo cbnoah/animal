@@ -5,5 +5,9 @@ public class Main {
         System.out.println("Sound: " + cow.getSound());
         System.out.println("Age: " + cow.getAge());
         System.out.println("Common Rule: " + Animal.commonRule());
+
+        cow.eat();
+        Dog dog = new Dog("Buddy", "Woof", 3);
+        dog.eat();
     }
 }
