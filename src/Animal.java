@@ -1,5 +1,3 @@
-package com.cbnoah.animal;
-
 public class Animal {
     private final String name;
     private final String sound;
