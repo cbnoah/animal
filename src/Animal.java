@@ -1,4 +1,4 @@
-public class Animal {
+abstract class Animal {
     // Attribut en privé pour que les accès se fassent via les getters
     private final String name;
     private final String sound;
