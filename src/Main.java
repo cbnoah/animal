@@ -12,5 +12,12 @@ public class Main {
 
         cow.eat("hay");
         cow.eat("ynov");
+
+        Animal genericAnimal = new Animal("Generic", "Sound", 1);
+        genericAnimal.eat();
+        genericAnimal.eat("food");
+        System.out.println(genericAnimal.getAge());
+        System.out.println(genericAnimal.getName());
+        System.out.println(genericAnimal.getSound());
     }
 }
