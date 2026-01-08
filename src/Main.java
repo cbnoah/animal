@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Cow cow = new Cow("Bessie", "Moo", 5);
@@ -21,5 +23,18 @@ public class Main {
         System.out.println(genericAnimal.getSound());
 
         dog.play();
+
+        ArrayList<Pet> pets = new ArrayList<>();
+        pets.add(dog);
+        pets.add(new Dog("Max", "Woof", 4));
+        pets.add(new Dog("Max2", "Woof", 4));
+        pets.add(new Dog("Max3", "Woof", 4));
+
+
+        System.out.println(pets);
+
+        for (Pet pet : pets) {
+            pet.play();
+        }
     }
 }
